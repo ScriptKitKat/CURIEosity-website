@@ -42,26 +42,28 @@ export function HomePage() {
           </nav>
         </div>
       </header>
-      <main className="flex-grow flex items-center justify-center px-4">
-        <div className="text-center">
-          <h1 className="text-6xl md:text-8xl font-bold text-white mb-6">
-            Ignite Your
-            <br />
-            Curiosity
-          </h1>
-          <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
-            Join our hackathons and workshops designed to inspire the next generation of innovators in
-            tech.
-          </p>
-          <button className="bg-[#2D1E2F] text-white text-xl font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition duration-300">
-            Register now
-          </button>
+      <main className="flex-grow items-center justify-center">
+        <section id="home" className="py-40">
+          <div className="text-center">
+            <h1 className="text-6xl md:text-8xl font-bold text-white mb-6">
+              Ignite Your
+              <br />
+              Curiosity
+            </h1>
+            <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
+              Join our hackathons and workshops designed to inspire the next generation of innovators in
+              tech.
+            </p>
+            <button className="bg-[#2D1E2F] text-white text-xl font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition duration-300">
+              Register now
+            </button>
+          </div>
+        </section>
+        <div className="inset-x-0 bottom-0 h-24 bg-[#2D1E2F] rounded-t-full">
+          <div className="inset-x-0 pt-10 bottom-16 flex justify-center">
+            <ChevronDown className="w-8 h-8 text-white animate-bounce" />
+          </div>
         </div>
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-[#2D1E2F] rounded-t-full"></div>
-        <div className="absolute inset-x-0 bottom-16 flex justify-center">
-          <ChevronDown className="w-8 h-8 text-white animate-bounce" />
-        </div>
-        
         <section className="py-16 px-4 bg-[#2D1E2F] text-white">
           <h2 className="text-4xl font-bold text-center mb-12">What We Do</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -176,8 +178,9 @@ export function HomePage() {
           </div>
         </section>
       </main>
-      
+
       <footer className="relative h-24">
+        
       </footer>
     </div>
   )
