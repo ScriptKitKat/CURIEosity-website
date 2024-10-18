@@ -21,13 +21,13 @@ export function HomePage() {
             </span>
           </div>
           <nav className="hidden md:flex space-x-6">
-            <a href="#" className="border-b-2 border-white">
+            <a href="/" className="border-b-2 border-white">
               Home
             </a>
-            <a href="#" className="hover:text-pink-300">
+            <a href="/about" className="hover:text-pink-300">
               About
             </a>
-            <a href="#" className="hover:text-pink-300">
+            <a href="/events" className="hover:text-pink-300">
               Events
             </a>
             <a href="#" className="hover:text-pink-300">
