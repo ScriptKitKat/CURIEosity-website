@@ -61,10 +61,12 @@ export function HomePage() {
         </section>
         <div className="inset-x-0 bottom-0 h-24 bg-[#2D1E2F] rounded-t-full">
           <div className="inset-x-0 pt-10 bottom-16 flex justify-center">
+            <a href="#what-we-do">
             <ChevronDown className="w-8 h-8 text-white animate-bounce" />
+            </a>
           </div>
         </div>
-        <section className="py-16 px-4 bg-[#2D1E2F] text-white">
+        <section id="what-we-do" className="py-16 px-4 bg-[#2D1E2F] text-white">
           <h2 className="text-4xl font-bold text-center mb-12">What We Do</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {[
@@ -137,9 +139,11 @@ export function HomePage() {
                 CURIEosity is a 501(c)(3) nonprofit organization. All donations are tax-deductible. For donations above $250, please provide your name and email to receive a tax receipt. Contact us below if you would like to sponsor our initiatives.
               </p>
               <div className="flex gap-4">
-                <button className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition duration-300">
-                  Sponsor Us
-                </button>
+                <a href="https://hcb.hackclub.com/donations/start/curieosity?amount=10000" target="_blank">
+                  <button className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition duration-300">
+                    Sponsor Us
+                  </button>
+                </a>
                 <button className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition duration-300">
                   Donate
                 </button>

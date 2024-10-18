@@ -1,3 +1,3 @@
 # CURIEosity-website
 
-Webmaster: Vania Rios Villasana
+Webmaster: Priscilla Ye
