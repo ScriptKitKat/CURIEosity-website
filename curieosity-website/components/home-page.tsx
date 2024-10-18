@@ -1,6 +1,9 @@
 'use client'
 
 import { ChevronDown, ArrowRight, MapPin } from "lucide-react"
+import Image from 'next/image'
+import CURELogo from './CURE_Logo.svg';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 export function HomePage() {
@@ -9,19 +12,10 @@ export function HomePage() {
       <header className="bg-[#2D1E2F] text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-8 h-8 text-pink-500"
-            >
-              <path d="M12 .75a8.25 8.25 0 00-4.135 15.39c.686.398 1.115 1.008 1.134 1.623a.75.75 0 00.577.706c.352.083.71.148 1.074.195.323.041.6-.218.6-.544v-4.661a6.714 6.714 0 01-.937-.171.75.75 0 11.374-1.453 5.261 5.261 0 002.626 0 .75.75 0 11.374 1.452 6.712 6.712 0 01-.937.172v4.66c0 .327.277.586.6.545.364-.047.722-.112 1.074-.195a.75.75 0 00.577-.706c.02-.615.448-1.225 1.134-1.623A8.25 8.25 0 0012 .75z" />
-              <path
-                fillRule="evenodd"
-                d="M9.013 19.9a.75.75 0 01.877-.597 11.319 11.319 0 004.22 0 .75.75 0 11.28 1.473 12.819 12.819 0 01-4.78 0 .75.75 0 01-.597-.876zM9.754 22.344a.75.75 0 01.824-.668 13.682 13.682 0 002.844 0 .75.75 0 11.156 1.492 15.156 15.156 0 01-3.156 0 .75.75 0 01-.668-.824z"
-                clipRule="evenodd"
-              />
-            </svg>
+          <div>
+            <Image src={CURELogo} alt="CURE Logo" className="w-8 h-8" width="24" height="24"/>
+          </div>
+
             <span className="text-2xl font-bold">
               CURIE<span className="text-pink-500">osity</span>
             </span>
@@ -127,26 +121,23 @@ export function HomePage() {
             <div className="bg-[#3D2E3F] p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">Join Our Team</h3>
               <p className="mb-4">
-                CURIEosity is a student-run organization dedicated to providing resources and opportunities in business and technology. Join our team to gain 1750+ volunteer hours and gain valuable leadership experience!
+                CURIEosity is a student-run organization dedicated to providing resources and opportunities in business and technology. Join our team to gain volunteer hours and gain valuable leadership experience!
               </p>
               <button className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition duration-300">
                 Apply Now
               </button>
             </div>
             <div className="bg-[#3D2E3F] p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-4">Donate or Sponsor Us!</h3>
+              <h3 className="text-xl font-bold mb-4">Sponsor Us!</h3>
               <p className="mb-4">
                 CURIEosity is a 501(c)(3) nonprofit organization. All donations are tax-deductible. For donations above $250, please provide your name and email to receive a tax receipt. Contact us below if you would like to sponsor our initiatives.
               </p>
               <div className="flex gap-4">
                 <a href="https://hcb.hackclub.com/donations/start/curieosity?amount=10000" target="_blank">
                   <button className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition duration-300">
-                    Sponsor Us
+                    Donate
                   </button>
                 </a>
-                <button className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition duration-300">
-                  Donate
-                </button>
               </div>
             </div>
           </div>
@@ -183,8 +174,19 @@ export function HomePage() {
         </section>
       </main>
 
-      <footer className="relative h-24">
+      <footer className="relative h-24 bg-[#2D1E2F] flex items-center justify-center">
+      <div className="flex space-x-6">
+        {/* Email Icon */}
+        <a href="mailto:hello@curieosity.org" className="text-white hover:text-gray-400 space-x-2">
+          <i className="fas fa-envelope fa-lg"></i>
+          <span>hello@curieosity.org</span>
+        </a>
         
+        {/* Discord Icon */}
+        <a href="https://discord.gg/y4jUxuTTY3" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+          <i className="fab fa-discord fa-lg"></i>
+        </a>
+      </div>
       </footer>
     </div>
   )
