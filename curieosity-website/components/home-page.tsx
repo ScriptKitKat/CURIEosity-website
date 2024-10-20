@@ -37,7 +37,7 @@ export function HomePage() {
         </div>
       </header>
       <main className="flex-grow items-center justify-center">
-        <section id="home" className="py-40">
+        <section id="home" className="py-36">
           <div className="text-center">
             <h1 className="text-6xl md:text-8xl font-bold text-white mb-6">
               Ignite Your
