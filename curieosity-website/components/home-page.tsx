@@ -1,7 +1,7 @@
 'use client'
 
 import { ChevronDown, ArrowRight, MapPin } from "lucide-react"
-import Image from 'next/image'
+// import Image from 'next/image'
 // import CURELogo from './CURE_logo.svg';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
