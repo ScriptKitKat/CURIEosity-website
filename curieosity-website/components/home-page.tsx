@@ -2,7 +2,7 @@
 
 import { ChevronDown, ArrowRight, MapPin } from "lucide-react"
 import Image from 'next/image'
-import CURELogo from './CURE_Logo.svg';
+// import CURELogo from './CURE_logo.svg';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
@@ -12,9 +12,9 @@ export function HomePage() {
       <header className="bg-[#2D1E2F] text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
-          <div>
+          {/* <div>
             <Image src={CURELogo} alt="CURE Logo" className="w-8 h-8" width="24" height="24"/>
-          </div>
+          </div> */}
 
             <span className="text-2xl font-bold">
               CURIE<span className="text-pink-500">osity</span>
