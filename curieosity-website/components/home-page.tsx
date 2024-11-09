@@ -1,9 +1,10 @@
 'use client'
 
 import { ChevronDown, ArrowRight, MapPin } from "lucide-react"
-// import Image from 'next/image'
-// import CURELogo from './CURE_logo.svg';
+import Image from 'next/image'
+import CURELogo from './images/CURE_logo.svg';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import world from './images/world.png';
 
 
 export function HomePage() {
@@ -12,10 +13,9 @@ export function HomePage() {
       <header className="bg-[#2D1E2F] text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
-          {/* <div>
-            <Image src={CURELogo} alt="CURE Logo" className="w-8 h-8" width="24" height="24"/>
-          </div> */}
-
+            <div>
+              <Image src={CURELogo} alt="CURE Logo" className="w-8 h-8" width="24" height="24"/>
+            </div>
             <span className="text-2xl font-bold">
               CURIE<span className="text-pink-500">osity</span>
             </span>
@@ -101,7 +101,7 @@ export function HomePage() {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-12">Our Global Reach</h2>
             <div className="relative">
-              <img src="/placeholder.svg?height=400&width=800" alt="World Map" className="w-full" />
+              <Image src={world} alt="World Map" className="w-full" />
               {[...Array(10)].map((_, i) => (
                 <MapPin key={i} className="absolute text-pink-500" style={{
                   top: `${Math.random() * 80}%`,
@@ -110,7 +110,7 @@ export function HomePage() {
               ))}
             </div>
             <p className="text-center mt-6">
-              CURIEosity has reached and served 27 countries around the world including Argentina, Philippines, India, and more.
+              CURIEosity has reached and served 32 countries around the world including Argentina, Philippines, India, and more.
             </p>
           </div>
         </section>
