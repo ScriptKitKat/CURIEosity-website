@@ -1,7 +1,8 @@
 'use client'
 
 import { ChevronDown, ArrowRight, MapPin } from "lucide-react"
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
 import CURELogo from './images/CURE_logo.svg';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import world from './images/world.png';
@@ -21,18 +22,18 @@ export function HomePage() {
             </span>
           </div>
           <nav className="hidden md:flex space-x-6">
-            <a href="/" className="border-b-2 border-white">
+            <Link href="/" className="border-b-2 border-white">
               Home
-            </a>
-            <a href="/about" className="hover:text-pink-300">
+            </Link>
+            <Link href="/about" className="hover:text-pink-300">
               About
-            </a>
-            <a href="/events" className="hover:text-pink-300">
+            </Link>
+            <Link href="/events" className="hover:text-pink-300">
               Events
-            </a>
-            <a href="#" className="hover:text-pink-300">
+            </Link>
+            <Link href="#" className="hover:text-pink-300">
               Contact
-            </a>
+            </Link>
           </nav>
         </div>
       </header>
