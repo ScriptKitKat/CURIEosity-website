@@ -26,6 +26,7 @@ export function HomePage() {
             </button>
           </div>
         </section>
+
         <div className="inset-x-0 bottom-0 h-24 bg-[#2D1E2F] rounded-t-full">
           <div className="inset-x-0 pt-10 bottom-16 flex justify-center">
             <a href="#what-we-do">
@@ -116,7 +117,7 @@ export function HomePage() {
           </div>
         </section>
 
-        <section className="py-16 px-4 bg-[#3D2E3F] text-white">
+        <section id="contact" className="py-16 px-4 bg-[#3D2E3F] text-white">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-8">Contact Us</h2>
             <p className="text-center mb-8">Interested in partnering with us? Send us a message!</p>
