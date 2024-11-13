@@ -2,8 +2,6 @@
 
 import { ChevronDown, ArrowRight, MapPin } from "lucide-react"
 import Image from 'next/image';
-import Link from 'next/link';
-import CURELogo from './images/CURE_logo.svg';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import world from './images/world.png';
 
