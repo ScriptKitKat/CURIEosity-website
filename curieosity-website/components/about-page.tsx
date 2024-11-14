@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { useState } from "react"
 import Image from "next/image"
+import prisc from './images/priscilla.jpg';
 
 export default function AboutPage() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -33,22 +34,26 @@ export default function AboutPage() {
     {
       name: "Priscilla Ye",
       role: "EXECUTIVE DIRECTOR",
-      description: "An idea machine. He loves coffee, bikes, coffee bikes, and the future of learning."
+      description: "Sparking curiosity. On a mission to empower girls in tech",
+      image: prisc
     },
     {
       name: "Vomini Gupta",
       role: "DIRECTOR OF TECHNOLOGY",
-      description: "Elite building everything from chess coding to a mission to the moon."
+      description: "Elite building everything from chess coding to a mission to the moon.",
+      image: null
     },
     {
       name: "Aniya Jain",
       role: "DIRECTOR OF MARKETING",
-      description: "Designing marketing campaigns by day, cosmic dreamer by night."
+      description: "Designing marketing campaigns by day, cosmic dreamer by night.",
+      image: null
     },
     {
       name: "Shivani Kulandaivel",
       role: "DIRECTOR OF OPERATIONS",
-      description: "Combining strategy and execution to help tech thrive and scale."
+      description: "Combining strategy and execution to help tech thrive and scale.",
+      image: null
     },
   ]
 
@@ -85,7 +90,7 @@ export default function AboutPage() {
                 <CardContent className="p-6">
                   <div className="text-center mb-4">
                     <Avatar className="h-24 w-24 mx-auto mb-4">
-                      <AvatarImage src={`/placeholder.svg?height=96&width=96`} />
+                      <AvatarImage src={director.image ? director.image.src : "/"} />
                       <AvatarFallback>{director.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                     </Avatar>
                     <h3 className="font-bold text-lg">{director.name}</h3>

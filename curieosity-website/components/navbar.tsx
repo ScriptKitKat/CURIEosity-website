@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import CURELogo from './images/CURE_logo.svg';
 import { usePathname } from 'next/navigation';
+import { ChevronDown } from 'lucide-react';
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -27,9 +28,21 @@ export default function Navbar() {
             <Link href="/about" className={`hover:text-pink-300 ${isActive('/about') ? 'border-b-2 border-white' : ''}`}>
               About
             </Link>
-            <Link href="/events" className={`hover:text-pink-300 ${isActive('/events') ? 'border-b-2 border-white' : ''}`}>
-              Events
-            </Link>
+            <div className="relative group">
+              <Link href="/events" className={`flex items-center hover:text-pink-300 ${isActive('/events') ? 'border-b-2 border-white' : ''}`}>
+                Events <ChevronDown className="ml-1 h-4 w-4" />
+              </Link>
+              <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-[#2D1E2F] ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
+                <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <Link href="/events/greentech-challenge" className="block px-4 py-2 text-sm hover:bg-pink-500/10">
+                    GreenTech Challenge
+                  </Link>
+                  <Link href="/events/pitchfest-challenge" className="block px-4 py-2 text-sm hover:bg-pink-500/10">
+                    Pitchfest Challenge
+                  </Link>
+                </div>
+              </div>
+            </div>
             <Link href="/#contact" className="hover:text-pink-300">
               Contact
             </Link>
