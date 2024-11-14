@@ -34,11 +34,11 @@ export default function Navbar() {
               </Link>
               <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-[#2D1E2F] ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
                 <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                  <Link href="/events/greentech-challenge" className="block px-4 py-2 text-sm hover:bg-pink-500/10">
-                    GreenTech Challenge
+                  <Link href="/events/naturehacks" className="block px-4 py-2 text-sm hover:bg-pink-500/10">
+                    NatureHacks
                   </Link>
-                  <Link href="/events/pitchfest-challenge" className="block px-4 py-2 text-sm hover:bg-pink-500/10">
-                    Pitchfest Challenge
+                  <Link href="/events/launchlab" className="block px-4 py-2 text-sm hover:bg-pink-500/10">
+                    LaunchLab
                   </Link>
                 </div>
               </div>
