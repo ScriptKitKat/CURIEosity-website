@@ -17,7 +17,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "CURIEosity",
-  description: "CURIEosity is a 501(3)c dedicated to empowering students in CS",
+  description: "CURIEosity is a 501(3)c dedicated to empowering students in CS, especially girls.",
 };
 
 export default function RootLayout({
@@ -32,8 +32,8 @@ export default function RootLayout({
       >
         <Navbar /> 
         {children}
-      </body>
-      <Footer /> 
+        <Footer />
+      </body> 
     </html>
   );
 }

@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge"
 import { useState } from "react"
 import Image from "next/image"
 import prisc from './images/priscilla.jpg';
+import learning from './images/girls-coding.jpg';
 
 export default function AboutPage() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -34,24 +35,18 @@ export default function AboutPage() {
     {
       name: "Priscilla Ye",
       role: "EXECUTIVE DIRECTOR",
-      description: "Sparking curiosity. On a mission to empower girls in tech",
+      description: "Sparking curiosity. On a mission to empower girls in tech.",
       image: prisc
     },
     {
       name: "Vomini Gupta",
-      role: "DIRECTOR OF TECHNOLOGY",
+      role: "DIRECTOR OF OPERATIONS",
       description: "Elite building everything from chess coding to a mission to the moon.",
       image: null
     },
     {
-      name: "Aniya Jain",
-      role: "DIRECTOR OF MARKETING",
-      description: "Designing marketing campaigns by day, cosmic dreamer by night.",
-      image: null
-    },
-    {
       name: "Shivani Kulandaivel",
-      role: "DIRECTOR OF OPERATIONS",
+      role: "DIRECTOR OF MARKETING",
       description: "Combining strategy and execution to help tech thrive and scale.",
       image: null
     },
@@ -82,7 +77,6 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-4xl font-bold">Meet our Directors</h2>
-            <Button variant="outline" className="border-pink-600 text-pink-400 hover:bg-pink-600 hover:text-white">OUR TEAM</Button>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {directors.map((director, index) => (
@@ -106,25 +100,17 @@ export default function AboutPage() {
 
       {/* Stats Section */}
       <section className="py-24 px-4 bg-[#251B27]">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
           <div>
-            <div className="text-3xl font-bold mb-2 text-pink-400">7M+</div>
-            <div className="text-gray-300">mentorships</div>
+            <div className="text-3xl font-bold mb-2 text-pink-400">400+</div>
+            <div className="text-gray-300">students impacted</div>
           </div>
           <div>
-            <div className="text-3xl font-bold mb-2 text-pink-400">150+</div>
-            <div className="text-gray-300">team members</div>
-          </div>
-          <div>
-            <div className="text-3xl font-bold mb-2 text-pink-400">20k+</div>
-            <div className="text-gray-300">students taught</div>
-          </div>
-          <div>
-            <div className="text-3xl font-bold mb-2 text-pink-400">$70k+</div>
+            <div className="text-3xl font-bold mb-2 text-pink-400">$30k+</div>
             <div className="text-gray-300">raised</div>
           </div>
           <div>
-            <div className="text-3xl font-bold mb-2 text-pink-400">30+</div>
+            <div className="text-3xl font-bold mb-2 text-pink-400">10+</div>
             <div className="text-gray-300">partners</div>
           </div>
         </div>
@@ -141,7 +127,7 @@ export default function AboutPage() {
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg"
+              src={learning}
               alt="Students learning"
               fill
               className="object-cover"

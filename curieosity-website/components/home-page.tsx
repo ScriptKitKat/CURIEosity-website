@@ -4,6 +4,8 @@ import { ChevronDown, ArrowRight, MapPin } from "lucide-react"
 import Image from 'next/image';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import world from './images/world.png';
+import Link from 'next/link';
+import { link } from "fs";
 
 
 export function HomePage() {
@@ -21,9 +23,9 @@ export function HomePage() {
               Join our hackathons and workshops designed to inspire the next generation of innovators in
               tech.
             </p>
-            <button className="bg-[#2D1E2F] text-white text-xl font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition duration-300">
+            <Link href="/events" className="bg-[#2D1E2F] text-white text-xl font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition duration-300">
               Register now
-            </button>
+            </Link>
           </div>
         </section>
 
@@ -42,28 +44,32 @@ export function HomePage() {
                 title: "Educational Workshops",
                 description: "We provide weekly or monthly workshops to companies and nonprofit looking to educate their team or community.",
                 icon: "🎓",
+                link: "/",
               },
               {
                 title: "Events",
                 description: "Want to learn from industry experts and academic leaders? Join us at one of our events covering AI, blockchain, greentech, and more!",
                 icon: "🎉",
+                link: "/events",
               },
               {
                 title: "Startup Funding",
                 description: "Our pitch competitions and hackathons provide startup funding as prizes, empowering you to turn your idea into reality!",
                 icon: "💰",
+                link: "/",
               },
               {
                 title: "Join Our Team",
                 description: "We are currently seeking talented students with a strong passion for business and technology to join our team.",
                 icon: "🤝",
+                link: "/",
               },
             ].map((item, index) => (
               <div key={index} className="bg-[#3D2E3F] p-6 rounded-lg">
                 <div className="text-4xl mb-4">{item.icon}</div>
                 <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                 <p className="mb-4">{item.description}</p>
-                <a href="#" className="text-pink-400 hover:text-pink-300 inline-flex items-center">
+                <a href={item.link} className="text-pink-400 hover:text-pink-300 inline-flex items-center">
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </div>
