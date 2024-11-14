@@ -5,7 +5,6 @@ import Image from 'next/image';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import world from './images/world.png';
 import Link from 'next/link';
-import { link } from "fs";
 
 
 export function HomePage() {
