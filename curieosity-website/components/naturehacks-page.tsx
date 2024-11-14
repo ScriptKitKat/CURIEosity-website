@@ -95,7 +95,7 @@ return (
             <AccordionItem value="item-3">
             <AccordionTrigger>What should I bring?</AccordionTrigger>
             <AccordionContent>
-                Participants should bring their own laptops, chargers, and any other devices they might need for development. We'll provide food, drinks, and a collaborative workspace for the duration of the event.
+                Participants should bring their own laptops, chargers, and any other devices they might need for development. We&apos;ll provide food, drinks, and a collaborative workspace for the duration of the event.
             </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
