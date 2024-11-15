@@ -34,7 +34,7 @@ body {
 }
 
 .fade-in-rise {
-  animation: fadeInRise 1s ease-out forwards; /* 1s duration, ease-out for smooth effect */
+  animation: fadeInRise 1.5s ease-out forwards; /* 1s duration, ease-out for smooth effect */
 }
 
 @layer utilities {
