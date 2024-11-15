@@ -24,7 +24,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> 
         } else {
             setStatus('Failed to send message. Please try again.');
         }
-    } catch (error) {
+    } catch (e) {
         setStatus('Failed to send message. Please try again.');
     }
 };
