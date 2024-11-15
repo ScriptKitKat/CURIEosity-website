@@ -123,7 +123,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-4xl font-bold mb-6">What we do</h2>
             <p className="text-gray-300 text-lg">
-              We&apos;re a Non-profit organization instilling a love of computer science in students, especially girls, from all walks of life. Founded in early 2022, we are a group of software engineers, designers, and students striving to make computer science education accessible to everyone. From live workshops to research programs, CURIEosity has a way for you to learn computer science. We offer lessons on web development, UI design, game development, and more.
+              We&apos;re a Non-profit organization instilling a love of computer science in students, especially girls, from all walks of life. Founded in early 2022, we are a group of software engineers, designers, and students striving to make computer science education accessible to everyone. From live workshops to hackathons, CURIEosity has a way for you to learn computer science. We offer workshops and hackathons relating to web development, UI design, game development, and more.
             </p>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">

@@ -6,6 +6,8 @@ AccordionContent,
 AccordionItem,
 AccordionTrigger,
 } from "@/components/ui/accordion"
+import Image from "next/image"
+import forest from './images/forest.jpg';
 
 export default function NatureHacks() {
 return (
@@ -14,7 +16,7 @@ return (
     <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <img
-        src="/placeholder.svg?height=600&width=1200"
+        src={forest.src}
         alt="Nature background"
         className="absolute inset-0 w-full h-full object-cover"
         />
@@ -93,12 +95,6 @@ return (
             </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-            <AccordionTrigger>What should I bring?</AccordionTrigger>
-            <AccordionContent>
-                Participants should bring their own laptops, chargers, and any other devices they might need for development. We&apos;ll provide food, drinks, and a collaborative workspace for the duration of the event.
-            </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-4">
             <AccordionTrigger>Are there prizes?</AccordionTrigger>
             <AccordionContent>
                 Yes! We have exciting prizes for the top projects, including cash awards, mentorship opportunities, and eco-friendly gadgets. Specific prize details will be announced closer to the event date.
