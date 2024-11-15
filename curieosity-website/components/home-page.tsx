@@ -6,6 +6,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import world from './images/world.png';
 import Link from 'next/link';
 import Contact from '@/components/contact';
+import Head from 'next/head';
+import CURELogo from './images/CURE_logo.svg';
 
 export function HomePage() {
   return (

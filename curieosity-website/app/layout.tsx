@@ -17,7 +17,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "CURIEosity",
-  description: "CURIEosity is a 501(3)c dedicated to empowering students in CS, especially girls.",
+  description: "Hosting hackathons, Computer Science workshops empowering the next generation of students, especially girls. Through interactive events, CURIEosity is committed to bridge the gap in tech education and inspire young minds to launch their start-up ideas.",
 };
 
 export default function RootLayout({

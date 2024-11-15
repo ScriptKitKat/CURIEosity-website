@@ -70,7 +70,7 @@ export default function EventsPage() {
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="flex-1">
-                    <Badge className="bg-pink-600 hover:bg-pink-700 mb-4">Current</Badge>
+                    <Badge className="bg-pink-600 hover:bg-pink-700 mb-4">Upcoming</Badge>
                     <h3 className="text-2xl font-bold mb-2">LaunchLab 2024</h3>
                     <div className="flex items-center gap-2 text-pink-400 mb-4">
                       <CalendarDays className="h-4 w-4" />
@@ -122,11 +122,11 @@ export default function EventsPage() {
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="flex-1">
-                    <Badge className="bg-pink-600 hover:bg-pink-700 mb-4">Current</Badge>
+                    <Badge className="bg-pink-600 hover:bg-pink-700 mb-4">Ended</Badge>
                     <h3 className="text-2xl font-bold mb-2">EastHacks</h3>
                     <div className="flex items-center gap-2 text-pink-400 mb-4">
                       <CalendarDays className="h-4 w-4" />
-                      <span>October 1st - Novemeber 25th, 2024</span>
+                      <span>October 1st - November 25th, 2024</span>
                     </div>
                     <div className="flex items-center gap-2 text-pink-400 mb-4">
                       <MapPin className="h-4 w-4" />
