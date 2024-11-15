@@ -18,7 +18,7 @@ export default function Navbar() {
               <Image src={CURELogo} alt="CURE Logo" className="w-8 h-8" width="24" height="24"/>
             </div>
             <span className="text-2xl font-bold">
-              CURIE<span className="text-pink-500">osity</span>
+              CURIE<span className="text-[#F64071] text-3xl pacifico-font font-normal">osity</span>
             </span>
           </div>
           <nav className="hidden md:flex space-x-6">

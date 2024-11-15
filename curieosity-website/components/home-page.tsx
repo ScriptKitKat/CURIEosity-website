@@ -9,11 +9,11 @@ import Contact from '@/components/contact';
 
 export function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-pink-400 via-pink-500 to-purple-600">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-[#FF5C8D] to-purple-900">
       <main className="flex-grow items-center justify-center">
         <section id="home" className="py-36">
           <div className="text-center">
-            <h1 className="text-6xl md:text-8xl font-bold text-white mb-6">
+            <h1 className=" title-font text-6xl md:text-8xl font-semibold text-white mb-6">
               Ignite Your
               <br />
               Curiosity
@@ -22,7 +22,7 @@ export function HomePage() {
               Join our hackathons and workshops designed to inspire the next generation of innovators in
               tech.
             </p>
-            <Link href="/events" className="bg-[#2D1E2F] text-white text-xl font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition duration-300">
+            <Link href="/events" className="bg-[#2D1E2F] text-white text-xl font-bold py-3 px-8 rounded-full hover:bg-[#FFC947] hover:bg-opacity-90 transition duration-300">
               Register now
             </Link>
           </div>

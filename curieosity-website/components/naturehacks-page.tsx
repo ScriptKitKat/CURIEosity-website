@@ -20,7 +20,7 @@ return (
         className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative z-10 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4">Naturehacks</h1>
+        <h1 className="text-6xl nature-font md:text-7xl font-bold mb-4">Nature Hacks</h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
             Join us for an exciting hackathon focused on innovative solutions for environmental challenges.
         </p>

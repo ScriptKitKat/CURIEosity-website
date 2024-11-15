@@ -65,7 +65,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-[#2D1E2F] text-white">
       {/* Hero Section */}
       <section className="py-24 px-4 bg-gradient-to-br from-pink-900 to-purple-900">
-        <div className="max-w-6xl mx-auto text-center">
+        <div className="title-font max-w-6xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">
             The mission behind{" "}
             <span className="text-pink-400">CURIEosity</span>.
