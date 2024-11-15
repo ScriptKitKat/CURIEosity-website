@@ -12,8 +12,8 @@ export function HomePage() {
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-[#FF5C8D] to-purple-900">
       <main className="flex-grow items-center justify-center">
         <section id="home" className="py-36">
-          <div className="text-center">
-            <h1 className=" title-font text-6xl md:text-8xl font-semibold text-white mb-6">
+          <div className="text-center fade-in-rise">
+            <h1 className="title-font text-6xl md:text-8xl font-semibold text-white mb-6">
               Ignite Your
               <br />
               Curiosity

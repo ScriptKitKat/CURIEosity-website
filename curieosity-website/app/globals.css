@@ -22,6 +22,21 @@ body {
   font-family: 'Unbounded', cursive;
 }
 
+@keyframes fadeInRise {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* starts slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* moves to original position */
+  }
+}
+
+.fade-in-rise {
+  animation: fadeInRise 1s ease-out forwards; /* 1s duration, ease-out for smooth effect */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
