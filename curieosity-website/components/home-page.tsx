@@ -5,7 +5,7 @@ import Image from 'next/image';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import world from './images/world.png';
 import Link from 'next/link';
-
+import Contact from '@/components/contact';
 
 export function HomePage() {
   return (
@@ -61,7 +61,7 @@ export function HomePage() {
                 title: "Join Our Team",
                 description: "We are currently seeking talented students with a strong passion for business and technology to join our team.",
                 icon: "🤝",
-                link: "/",
+                link: "https://tinyurl.com/CURIEosityRecruitInfo",
               },
             ].map((item, index) => (
               <div key={index} className="bg-[#3D2E3F] p-6 rounded-lg">
@@ -102,9 +102,13 @@ export function HomePage() {
               <p className="mb-4">
                 CURIEosity is a student-run organization dedicated to providing resources and opportunities in business and technology. Join our team to gain volunteer hours and gain valuable leadership experience!
               </p>
-              <button className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition duration-300">
-                Apply Now
-              </button>
+              <div className="flex gap-4">
+                <a href="https://tinyurl.com/CURIEosityRecruitInfo" target="_blank">
+                  <button className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition duration-300">
+                    Apply Now
+                  </button>
+                </a>
+              </div>
             </div>
             <div className="bg-[#3D2E3F] p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">Sponsor Us!</h3>
@@ -123,33 +127,7 @@ export function HomePage() {
         </section>
 
         <section id="contact" className="py-16 px-4 bg-[#3D2E3F] text-white">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-8">Contact Us</h2>
-            <p className="text-center mb-8">Interested in partnering with us? Send us a message!</p>
-            <form className="space-y-4">
-              <div>
-                <label htmlFor="email" className="block mb-2">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full p-2 rounded bg-[#2D1E2F] border border-pink-400 focus:border-pink-500 focus:ring focus:ring-pink-200"
-                  placeholder="e.g. jane@example.com"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block mb-2">Message</label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full p-2 rounded bg-[#2D1E2F] border border-pink-400 focus:border-pink-500 focus:ring focus:ring-pink-200"
-                  placeholder="Your message here..."
-                ></textarea>
-              </div>
-              <button type="submit" className="w-full bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition duration-300">
-                Send Message
-              </button>
-            </form>
-          </div>
+          <Contact />
         </section>
       </main>
     </div>

@@ -7,7 +7,8 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { useState } from "react"
 import Image from "next/image"
-import prisc from './images/priscilla.jpg';
+import prisc from './images/priscilla.png';
+import vomini from './images/vomini.png';
 import learning from './images/girls-coding.jpg';
 
 export default function AboutPage() {
@@ -42,7 +43,7 @@ export default function AboutPage() {
       name: "Vomini Gupta",
       role: "DIRECTOR OF OPERATIONS",
       description: "Elite building everything from chess coding to a mission to the moon.",
-      image: null
+      image: vomini
     },
     {
       name: "Shivani Kulandaivel",
