@@ -6,7 +6,6 @@ AccordionContent,
 AccordionItem,
 AccordionTrigger,
 } from "@/components/ui/accordion"
-import Image from "next/image"
 import forest from './images/forest.jpg';
 
 export default function NatureHacks() {

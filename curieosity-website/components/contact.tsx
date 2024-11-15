@@ -5,15 +5,6 @@ export default function ContactForm() {
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
 
-interface FormData {
-    email: string;
-    message: string;
-}
-
-interface FetchResponse {
-    ok: boolean;
-}
-
 const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
     setStatus('Sending...');
