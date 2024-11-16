@@ -9,6 +9,8 @@ import { useState } from "react"
 import Image from "next/image"
 import prisc from './images/priscilla.png';
 import vomini from './images/vomini.png';
+import aniya from './images/aniya.png';
+import shiv from './images/shivani.png';
 import learning from './images/girls-coding.jpg';
 
 export default function AboutPage() {
@@ -46,10 +48,16 @@ export default function AboutPage() {
       image: vomini
     },
     {
+      name: "Aniya Jain",
+      role: "DIRECTOR OF OUTREACH",
+      description: "She's crunching numbers and closing deals—a future business mogul in the making.",
+      image: aniya
+    },
+    {
       name: "Shivani Kulandaivel",
-      role: "DIRECTOR OF MARKETING",
+      role: "MARKETING",
       description: "Combining strategy and execution to help tech thrive and scale.",
-      image: null
+      image: shiv
     },
   ]
 
@@ -77,7 +85,7 @@ export default function AboutPage() {
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-4xl font-bold">Meet our Directors</h2>
+            <h2 className="text-4xl font-bold">Meet our Staff</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {directors.map((director, index) => (
