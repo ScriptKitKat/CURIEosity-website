@@ -1,6 +1,6 @@
 # CURIEosity - Empowering Young Women in STEM
 
-Welcome to the official GitHub repository for **CURIEosity.org**—a nonprofit organization dedicated to promoting technology education and innovation with a special emphasis on empowering young women in STEM (Science, Technology, Engineering, and Mathematics).
+Welcome to the official GitHub repository for **[CURIEosity.org](https://www.curieosity.org/)**—a nonprofit organization dedicated to promoting technology education and innovation with a special emphasis on empowering young women in STEM (Science, Technology, Engineering, and Mathematics).
 
 ## About CURIEosity
 
