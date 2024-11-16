@@ -89,7 +89,7 @@ export function HomePage() {
               ))}
             </div>
             <p className="text-center mt-6">
-              CURIEosity has reached and served 32 countries around the world including Argentina, Philippines, India, and more.
+              CURIEosity has reached and served 39 countries around the world including South Africa, Turkey, India, and more.
             </p>
           </div>
         </section>
@@ -100,7 +100,7 @@ export function HomePage() {
             <div className="bg-[#3D2E3F] p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">Join Our Team</h3>
               <p className="mb-4">
-                CURIEosity is a student-run organization dedicated to providing resources and opportunities in business and technology. Join our team to gain volunteer hours and gain valuable leadership experience!
+                CURIEosity is a student-run organization dedicated to providing resources and opportunities for minorities and students. Join our team to gain volunteer hours and gain valuable leadership experience!
               </p>
               <div className="flex gap-4">
                 <a href="https://tinyurl.com/CURIEosityRecruitInfo" target="_blank">
@@ -119,6 +119,11 @@ export function HomePage() {
                 <a href="https://hcb.hackclub.com/donations/start/curieosity?amount=10000" target="_blank">
                   <button className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition duration-300">
                     Donate
+                  </button>
+                </a>
+                <a href="https://www.canva.com/design/DAGWnJlIZAQ/sAcnxon5perqV0Kdep4D3w/view?utm_content=DAGWnJlIZAQ&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
+                  <button className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition duration-300">
+                    Sponsor
                   </button>
                 </a>
               </div>
