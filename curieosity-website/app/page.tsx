@@ -20,6 +20,7 @@ export const metadata = {
     description: "Hosting hackathons, Computer Science workshops empowering the next generation of students, especially girls. Through interactive events, CURIEosity is committed to bridge the gap in tech education and inspire young minds to launch their start-up ideas.",
     images: ["./components/images/CURE_logo.svg"],
   },
+  keywords: ["Curieosity", "tech education", "empower students", "computer science", "hackathons", "workshops"],
 };
 
 export default function Page() {
