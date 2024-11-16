@@ -24,5 +24,5 @@ The CURIEosity website serves as a hub for our community, providing the latest i
 ## Do you want to create a similar website?
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/curieosity.org.git
+   git clone https://github.com/yourusername/CURIEosity-website.org.git
 2. Use a code editor (e.g., [VS Code](https://code.visualstudio.com/)) to help code your website!
