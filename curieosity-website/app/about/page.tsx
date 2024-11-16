@@ -1,10 +1,11 @@
 import AboutPage from '@/components/about-page';
 
-
 export const metadata = {
+    title: "About Us - Curieosity",
+    description: "Meet our team. Our mission is to empower the next generation of girls in computer science by fostering a passion for coding and innovation. Through engaging hackathons, inspiring workshops, and creative lesson plans, we aim to bridge the gender gap in tech and inspire young women to pursue their dreams in STEM fields.",
     openGraph: {
-      title: "CURIEosity",
-      description: "Hosting hackathons, Computer Science workshops empowering the next generation of students, especially girls. Through interactive events, CURIEosity is committed to bridge the gap in tech education and inspire young minds to launch their start-up ideas.",
+      title: "About Us - Curieosity",
+      description: "Meet our team. Our mission is to empower the next generation of girls in computer science by fostering a passion for coding and innovation. Through engaging hackathons, inspiring workshops, and creative lesson plans, we aim to bridge the gender gap in tech and inspire young women to pursue their dreams in STEM fields.",
       images: [
         {
           url: "./components/images/CURE_logo.svg",
@@ -13,15 +14,15 @@ export const metadata = {
           alt: "CURIEosity Logo",
         },
       ],
-      url: "https://curieosity.org/",
+      url: "https://curieosity.org/about",
     },
     twitter: {
       card: "summary_large_image",
-      title: "CURIEosity",
-      description: "Hosting hackathons, Computer Science workshops empowering the next generation of students, especially girls. Through interactive events, CURIEosity is committed to bridge the gap in tech education and inspire young minds to launch their start-up ideas.",
+      title: "About Us - Curieosity",
+      description: "Meet our team. Our mission is to empower the next generation of girls in computer science by fostering a passion for coding and innovation. Through engaging hackathons, inspiring workshops, and creative lesson plans, we aim to bridge the gender gap in tech and inspire young women to pursue their dreams in STEM fields.",
       images: ["./components/images/CURE_logo.svg"],
     },
-    keywords: ["Curieosity", "tech education", "empower students", "computer science", "hackathons", "workshops"],
+    keywords: ["Curieosity", "Priscilla Ye", "Vomini Gupta", "Shivani Kulandaivel", "computer science", "hackathons", "workshops"],
   };
 
 
