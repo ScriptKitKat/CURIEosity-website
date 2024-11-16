@@ -56,7 +56,7 @@ export default function AboutPage() {
     {
       name: "Shivani Kulandaivel",
       role: "MARKETING",
-      description: "Combining strategy and execution to help tech thrive and scale.",
+      description: "She codes, she sketches, she gardens—and still has time to smash it on the badminton court.",
       image: shiv
     },
   ]
