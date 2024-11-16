@@ -11,7 +11,7 @@ export function HomePage() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-[#FF5C8D] to-purple-900">
       <main className="flex-grow items-center justify-center">
-        <section id="home" className="py-36">
+        <section id="home" className="relative py-36">
           <div className="text-center fade-in-rise">
             <h1 className="title-font text-6xl md:text-8xl font-semibold text-white mb-6">
               Ignite Your
@@ -26,14 +26,14 @@ export function HomePage() {
               Register now
             </Link>
           </div>
+          <div className="absolute inset-x-0 bottom-6 flex justify-center">
+            <a href="#what-we-do">
+              <ChevronDown className="w-8 h-8 text-white animate-bounce" />
+            </a>
+          </div>
         </section>
 
         <div className="inset-x-0 bottom-0 h-24 bg-[#2D1E2F] rounded-t-full">
-          <div className="inset-x-0 pt-10 bottom-16 flex justify-center">
-            <a href="#what-we-do">
-            <ChevronDown className="w-8 h-8 text-white animate-bounce" />
-            </a>
-          </div>
         </div>
         <section id="what-we-do" className="py-16 px-4 bg-[#2D1E2F] text-white">
           <h2 className="text-4xl font-bold text-center mb-12">What We Do</h2>
