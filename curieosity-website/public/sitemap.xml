@@ -1,3 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.curieosity.org/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://www.curieosity.org/about</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Events Page -->
+  <url>
+    <loc>https://www.curieosity.org/events</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- NatureHacks Event Page -->
+  <url>
+    <loc>https://www.curieosity.org/events/naturehacks</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- LaunchLab Event Page -->
+  <url>
+    <loc>https://www.curieosity.org/events/launchlab</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>
