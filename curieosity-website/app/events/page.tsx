@@ -1,10 +1,10 @@
 import EventsPage from '@/components/events-page';
 
 export const metadata = {
-    title: "Events - Curieosity",
+    title: "Events - CURIEosity",
     description: "Join us for our dynamic hackathons, where guest speakers from diverse industry backgrounds—ranging from esteemed professors to cutting-edge innovators—share their expertise. Our events offer the perfect opportunity to network, develop new skills, and apply your knowledge to kickstart your future career. Best of all, every event is completely free, making it accessible to everyone passionate about tech and innovation!",
     openGraph: {
-      title: "Events - Curieosity",
+      title: "Events - CURIEosity",
       description: "Join us for our dynamic hackathons, where guest speakers from diverse industry backgrounds—ranging from esteemed professors to cutting-edge innovators—share their expertise. Our events offer the perfect opportunity to network, develop new skills, and apply your knowledge to kickstart your future career. Best of all, every event is completely free, making it accessible to everyone passionate about tech and innovation!",
       images: [
         {
@@ -18,7 +18,7 @@ export const metadata = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Events - Curieosity",
+      title: "Events - CURIEosity",
       description: "Join us for our dynamic hackathons, where guest speakers from diverse industry backgrounds—ranging from esteemed professors to cutting-edge innovators—share their expertise. Our events offer the perfect opportunity to network, develop new skills, and apply your knowledge to kickstart your future career. Best of all, every event is completely free, making it accessible to everyone passionate about tech and innovation!",
       images: ["./components/images/CURE_logo.svg"],
     },

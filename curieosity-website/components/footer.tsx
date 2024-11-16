@@ -13,6 +13,11 @@ export default function Footer() {
         <a href="https://discord.gg/y4jUxuTTY3" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
           <i className="fab fa-discord fa-lg"></i>
         </a>
+
+        {/* LinkedIn Icon */}
+        <a href="https://www.linkedin.com/company/curie-osity" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+          <i className="fab fa-linkedin fa-lg"></i>
+        </a>
     </div>
   );
 }

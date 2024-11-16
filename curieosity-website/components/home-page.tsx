@@ -4,7 +4,7 @@ import { ChevronDown, ArrowRight, MapPin } from "lucide-react"
 import Image from 'next/image';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import world from './images/world.png';
-import Link from 'next/link';
+import { Button } from "@/components/ui/button";
 import Contact from '@/components/contact';
 
 export function HomePage() {
@@ -22,9 +22,11 @@ export function HomePage() {
               Join our hackathons and workshops designed to inspire the next generation of innovators in
               tech.
             </p>
-            <Link href="/events" className="bg-[#2D1E2F] text-white text-xl font-bold py-3 px-8 rounded-full hover:bg-[#FFC947] hover:bg-opacity-90 transition duration-300">
-              Register now
-            </Link>
+            <a href="/events">
+              <Button className="bg-[#2D1E2F] text-white text-xl font-bold py-8 px-8 rounded-full hover:bg-[#771956] transform hover:scale-110 hover:bg-opacity-90 transition duration-300">
+                Register now
+              </Button>
+            </a>
           </div>
           <div className="absolute inset-x-0 bottom-6 flex justify-center">
             <a href="#what-we-do">

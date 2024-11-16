@@ -33,8 +33,8 @@ export default function EventsPage() {
     <div className="bg-[#2D1E2F] text-white min-h-screen">
       {/* Hero Section */}
       <section className="relative py-24 px-4 bg-gradient-to-br from-pink-900 to-purple-900">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-6">Events</h1>
+        <div className="fade-in-rise max-w-4xl mx-auto text-center">
+          <h1 className="title-font text-5xl font-bold mb-6">Events</h1>
           <p className="text-xl mb-8">
             We host conferences featuring experts from every corner of the industry, from professors to innovators. Along the way, you&apos;ll meet new people, pick up new skills, and apply what you have learned to your future careers. All events are free!
           </p>

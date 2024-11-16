@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://curieosity.org
+
+# Sitemaps
+Sitemap: https://curieosity.org/sitemap.xml

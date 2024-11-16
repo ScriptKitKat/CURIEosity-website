@@ -7,15 +7,16 @@ AccordionItem,
 AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Rocket, Users, Trophy, Calendar } from 'lucide-react'
+import launch from './images/launch.jpg';
 
 export default function LaunchLab() {
     return (
         <div className="min-h-screen bg-[#2D1E2F] text-white">
         {/* Hero Section */}
-        <section className="relative h-[60vh] flex items-center justify-center">
+        <section className="text-black relative h-[60vh] flex items-center justify-center">
             <div className="absolute inset-0 bg-black opacity-50"></div>
             <img
-            src="/placeholder.svg?height=600&width=1200"
+            src={launch.src}
             alt="Business innovation background"
             className="absolute inset-0 w-full h-full object-cover"
             />
