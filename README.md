@@ -14,25 +14,15 @@ The CURIEosity website serves as a hub for our community, providing the latest i
 
 - **About**: Learn more about CURIEosity's mission, vision, and values.
 - **Events**: Stay updated on upcoming events, including **NatureHacks** and **LaunchLab**, where young women can come together to create innovative solutions for a better world.
-- **Blog**: Read our latest insights, success stories, and tutorials to inspire the STEM leaders of tomorrow.
 
 ## Key Features
 
 - **Event Pages**: Information about events like **NatureHacks**, our global hackathon focused on environmental tech, and **LaunchLab**, a startup incubator program for aspiring women innovators.
 - **Program Information**: Access details about our various programs designed to support young women in their journey through STEM education and careers.
-- **Resources**: Learn about scholarships, internships, mentorship programs, and other resources that help foster growth in STEM.
+- **Discord Server**: Learn about scholarships, internships, mentorship programs, and other resources that help foster growth in STEM.
 
-## Getting Started
-
-To run or contribute to the **CURIEosity.org** website, follow these steps:
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/en/) (for local development and running the website)
-- A code editor (e.g., [VS Code](https://code.visualstudio.com/))
-  
-### Installation
-
+## Do you want to create a similar website?
 1. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/yourusername/curieosity.org.git
+2. Use a code editor (e.g., [VS Code](https://code.visualstudio.com/)) to help code your website!
