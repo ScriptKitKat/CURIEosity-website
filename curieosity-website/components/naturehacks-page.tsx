@@ -7,8 +7,22 @@ AccordionItem,
 AccordionTrigger,
 } from "@/components/ui/accordion"
 import forest from './images/forest.jpg';
+import prakhar from './images/prakhar.png';
+import xyz from './images/xyz-logo-white.png';
+import hcb from './images/hcb-light.png';
+
 
 export default function NatureHacks() {
+    const sponsors = [
+        {
+          name: ".xyz",
+          image: xyz
+        },
+        {
+          name: "hackclub",
+          image: hcb
+        }
+      ];
 return (
     <div className="min-h-screen bg-[#2D1E2F] text-white">
     {/* Hero Section */}
@@ -35,12 +49,12 @@ return (
     {/* Speakers Section */}
     <section className="py-16 px-4">
         <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-center">Featured Speakers</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <h2 className="text-4xl font-bold mb-12 text-center">Featured Speaker</h2>
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
             {[
-            { name: "Dr. Jane Smith", role: "Environmental Scientist", image: "/placeholder.svg?height=200&width=200" },
-            { name: "John Doe", role: "Sustainability Expert", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Emily Johnson", role: "Green Tech Innovator", image: "/placeholder.svg?height=200&width=200" },
+            { name: "Prakhar Agarwal", role: "Carbon Direct", image: prakhar.src },
+            // { name: "John Doe", role: "Sustainability Expert", image: "/placeholder.svg?height=200&width=200" },
+            // { name: "Emily Johnson", role: "Green Tech Innovator", image: "/placeholder.svg?height=200&width=200" },
             ].map((speaker, index) => (
             <Card key={index} className="bg-[#3D2E3F]">
                 <CardContent className="p-6 text-center">
@@ -62,12 +76,12 @@ return (
     <section className="py-16 px-4 bg-[#3D2E3F]">
         <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center">Our Sponsors</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((sponsor) => (
-            <div key={sponsor} className="flex items-center justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
+            {sponsors.map((sponsor, index) => (
+            <div key={index} className="flex items-center justify-center">
                 <img
-                src={`/placeholder.svg?height=100&width=200&text=Sponsor ${sponsor}`}
-                alt={`Sponsor ${sponsor}`}
+                src={sponsor.image ? sponsor.image.src : "/"}
+                alt={`${sponsor.name}`}
                 className="max-w-full h-auto"
                 />
             </div>

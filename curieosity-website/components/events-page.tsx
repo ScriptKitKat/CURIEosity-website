@@ -9,6 +9,7 @@ import Link from 'next/link';
 import dmi from './images/dmi.png';
 import luke from './images/luke.png';
 import ilho from './images/ilho.jpg';
+import prakhar from './images/prakhar.png';
 
 export default function EventsPage() {
   const speakersEastHacks = [
@@ -29,6 +30,24 @@ export default function EventsPage() {
     },
   ]
 
+  const speakersNatureHacks = [
+    {
+      name: "Prakhar Agarwal",
+      company: "Carbon Direct",
+      image: prakhar
+    },
+    {
+      name: "null",
+      company: "null",
+      image: null
+    },
+    {
+      name: "null",
+      company: "null",
+      image: null
+    },
+  ]
+  
   return (
     <div className="bg-[#2D1E2F] text-white min-h-screen">
       {/* Hero Section */}
@@ -61,7 +80,7 @@ export default function EventsPage() {
                       <span>Worldwide</span>
                     </div>
                     <p className="mb-6">
-                      Join us for a 2-month long hackathon exploring the latest developments in artificial intelligence and machine learning. Network with industry leaders and participate in hands-on workshops.
+                      Join us for a 2-month long hackathon creating projects addressing climate change. Network with industry workers and participate in hands-on workshops.
                     </p>
                     <Button className="bg-pink-600 hover:bg-pink-700">Register Now</Button>
                   </div>
@@ -70,15 +89,15 @@ export default function EventsPage() {
                       <Users className="h-4 w-4 text-pink-400" />
                       <span className="font-semibold">Featured Speakers</span>
                     </div>
-                    <div className="flex flex-wrap gap-4">
-                      {[1, 2, 3].map((i) => (
-                        <div key={i} className="text-center">
+                    <div className="flex flex-wrap justify-center gap-6">
+                      {speakersNatureHacks.map((speaker, index) => (
+                        <div key={index} className="flex flex-col items-center text-center">
                           <Avatar className="h-16 w-16 mb-2">
-                            <AvatarImage src={`/placeholder.svg?height=64&width=64`} />
+                            <AvatarImage src={speaker.image ? speaker.image.src : "/"} />
                             <AvatarFallback>SP</AvatarFallback>
                           </Avatar>
-                          <div className="text-sm font-medium">Speaker {i}</div>
-                          <div className="text-xs text-pink-400">Company {i}</div>
+                          <div className="text-sm font-medium">{speaker.name}</div>
+                          <div className="text-xs text-pink-400">{speaker.company}</div>
                         </div>
                       ))}
                       <Button variant="link" className="text-pink-400 hover:text-pink-300">
