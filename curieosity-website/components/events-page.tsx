@@ -127,27 +127,6 @@ export default function EventsPage() {
                     </p>
                     <Button className="bg-pink-600 hover:bg-pink-700">Register Now</Button>
                   </div>
-                  <div className="flex flex-col gap-4">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Users className="h-4 w-4 text-pink-400" />
-                      <span className="font-semibold">Featured Speakers</span>
-                    </div>
-                    <div className="flex flex-wrap gap-4">
-                      {[1, 2, 3].map((i) => (
-                        <div key={i} className="text-center">
-                          <Avatar className="h-16 w-16 mb-2">
-                            <AvatarImage src={`/placeholder.svg?height=64&width=64`} />
-                            <AvatarFallback>SP</AvatarFallback>
-                          </Avatar>
-                          <div className="text-sm font-medium">Speaker {i}</div>
-                          <div className="text-xs text-pink-400">Company {i}</div>
-                        </div>
-                      ))}
-                      <Button variant="link" className="text-pink-400 hover:text-pink-300">
-                        View More Speakers
-                      </Button>
-                    </div>
-                  </div>
                 </div>
               </CardContent>
             </Card>
